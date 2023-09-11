@@ -1,0 +1,66 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --maincolor: rgb(0, 196, 214);
+    --seccolor: rgb(255, 255, 255);
+    --seccolor2: rgb(179, 70, 1);
+    --darkcolor: rgb(28, 28, 28);
+    --mainwidth: 1.5rem;
+
+}
+body
+{
+    font-family: "Roboto", sans-serif;
+}
+.navbar 
+{
+    border-radius: 0rem 0rem .8rem .8rem;
+    background: var(--darkcolor) !important;
+}
+.navbar a
+{
+    color: var(--maincolor);
+}
+.navbar .btn
+{
+    background-color: var(--seccolor2);
+    color: var(--seccolor);
+}
+.navbar a:hover
+{
+    color: var(--seccolor);
+}
+.navbar span svg
+{
+    color: var(--seccolor) !important;
+}
+.navbar .navbar-toggler:focus
+{
+    box-shadow: none;
+}
+.navbar .navbar-toggler
+{
+    border: 1px solid #fff;
+    transition: .2s ease;
+}
+.navbar .navbar-toggler[aria-expanded="true"]
+{
+    border: 1px solid var(--maincolor);
+}
+/* END OF NAV BAR */
+/* START OF LANDING */
+.landing
+{
+    height: calc(100vh - 74px);
+    background: var(--darkcolor);
+}
+.btn-h
+{
+    background: var(--maincolor);
+    color: var(--seccolor);
+}
