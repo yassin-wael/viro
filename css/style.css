@@ -6,10 +6,10 @@
 }
 :root
 {
-    --maincolor: rgb(0, 196, 214);
-    --seccolor: rgb(255, 255, 255);
-    --seccolor2: rgb(179, 70, 1);
-    --darkcolor: rgb(28, 28, 28);
+    --maincolor: #00c4d6;
+    --seccolor: #ffffff;
+    --seccolor2: #b34601;
+    --darkcolor: #1c1c1c;
     --seccolor3: #6f2254;
     --mainwidth: 1.5rem;
 
@@ -69,5 +69,17 @@ body
 .btn-h
 {
     background: var(--maincolor);
+    color: var(--seccolor);
+}
+/* //////////// END OF LANDING //////////// */
+/* ///////////// START OF PROD //////////// */
+.btn-p
+{
+    background: var(--seccolor3);
+    color: var(--seccolor);
+}
+.btn-p:hover
+{
+    background: var(--darkcolor);
     color: var(--seccolor);
 }
