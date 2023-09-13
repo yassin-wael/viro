@@ -22,3 +22,30 @@ console.log(num1 + num2 + name) , console.log(typeof num1 + name)
 document.getElementById("div2").innerHTML = (num1 + num2 + name)
 console.log(num1 +  num2)
 console.log(typeof name )
+////////////////////////////
+// START OF BOOLEAN
+
+var X = true
+var Y = false
+console.log(typeof x)
+console.log(typeof X)
+// //////// ///////////
+// START OF ARRAYS
+
+var demv = ["Yassin", "SH", "Wael", false , 21 , 0]
+console.log(demv)
+console.log(typeof demv [4])
+console.log(typeof demv[3])
+/////////////////////////
+// START OF OBJECT
+var obj = {
+    name : "Yassin",
+    age:  21,
+    city: "Alex"
+}
+console.log(obj.city)
+///////////////////////
+// START OF NULL
+var D 
+console.log(typeof D)
+/////////////////////REVISION ON JS///////////////////////

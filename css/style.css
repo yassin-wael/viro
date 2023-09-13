@@ -10,17 +10,24 @@
     --seccolor: rgb(255, 255, 255);
     --seccolor2: rgb(179, 70, 1);
     --darkcolor: rgb(28, 28, 28);
+    --seccolor3: #6f2254;
     --mainwidth: 1.5rem;
 
 }
 body
 {
     font-family: "Roboto", sans-serif;
+    background: var(--darkcolor);
+}
+.home
+{
+    background: url(../images/gradient-background-2560x1080-11027.jpg) no-repeat center fixed;
 }
 .navbar 
 {
-    border-radius: 0rem 0rem .8rem .8rem;
+    border-radius: 0rem 0rem .7rem .7rem;
     background: var(--darkcolor) !important;
+    /* height: 3.7rem; */
 }
 .navbar a
 {
@@ -28,7 +35,7 @@ body
 }
 .navbar .btn
 {
-    background-color: var(--seccolor2);
+    background-color: var(--seccolor3);
     color: var(--seccolor);
 }
 .navbar a:hover
@@ -56,8 +63,8 @@ body
 /* START OF LANDING */
 .landing
 {
-    height: calc(100vh - 74px);
-    background: var(--darkcolor);
+    height: calc(100vh - 58px);
+    background: #0000008e;
 }
 .btn-h
 {
