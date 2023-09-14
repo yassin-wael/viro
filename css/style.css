@@ -110,3 +110,8 @@ body
 {
     height: 100vh;
 }
+/* ADDOTIONALS */
+[data-bs-theme="dark"] .navbar a
+{
+    color: var(--p-200-main-color);
+}
