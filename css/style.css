@@ -84,6 +84,13 @@ body
 }
 /* //////////// END OF LANDING //////////// */
 /* ///////////// START OF PROD //////////// */
+.products
+{
+    height: 100vh;
+    display: flex;
+
+    align-items: center;
+}
 .card
 {
     border-radius: var(--border-radius);
@@ -99,11 +106,13 @@ body
     background: var(--darkcolor);
     color: var(--seccolor);
 }
-.products span
+.products #prod-s
 {
     transition: all 1s;
+    top: .5rem;
     margin: 0.4rem 1rem;
-    color: var(--seccolor3);
+    color: var(--bs-red);
+    font-weight: 500;
 }
 /* ////////// SERVICES /////////////*/
 .services

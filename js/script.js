@@ -54,6 +54,7 @@ console.log(typeof D)
 /////////////////////REVISION ON JS///////////////////////
 //////////////OF PROD//////////////
 document.getElementById("btn-r").onclick = function () {
-    document.getElementById("prod-s").innerHTML = "Soon"
+    document.getElementById("prod-s").innerHTML = "Available Soon"
     console.log("prodsection is done")
 }
+///////////////////////////////////
