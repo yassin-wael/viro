@@ -74,7 +74,7 @@ body
 /* START OF LANDING */
 .landing
 {
-    height: calc(100vh - 58px);
+    height: calc(100vh - 0px);
     background: #0000008e;
 }
 .btn-h
@@ -104,4 +104,9 @@ body
     transition: all 1s;
     margin: 0.4rem 1rem;
     color: var(--seccolor3);
+}
+/* ////////// SERVICES /////////////*/
+.services
+{
+    height: 100vh;
 }
