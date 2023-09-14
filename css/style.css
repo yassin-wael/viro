@@ -6,13 +6,24 @@
 }
 :root
 {
+    --P-main-color: #6610f2;
+    --p-100-main-color: #e0cffc;
+    --p-200-main-color: #c29ffa;
+    --p-300-main-color: #a370f7;
+    --p-400-main-color: #8540f5;
+    --p-500-main-color: #6610f2;
+    --p-600-main-color: #520dc2;
+    --p-700-main-color: #3d0a91;
+    --p-800-main-color: #290661;
+    --p-900-main-color: #140330;
     --maincolor: #00c4d6;
     --seccolor: #ffffff;
     --seccolor2: #b34601;
     --darkcolor: #1c1c1c;
     --seccolor3: #6f2254;
     --mainwidth: 1.5rem;
-
+    --border-radius: .7rem;
+    --sec-border-radius: .4rem;
 }
 body
 {
@@ -31,11 +42,11 @@ body
 }
 .navbar a
 {
-    color: var(--maincolor);
+    color: var(--p-100-main-color);
 }
 .navbar .btn
 {
-    background-color: var(--seccolor3);
+    background-color: var(--p-700-main-color);
     color: var(--seccolor);
 }
 .navbar a:hover
@@ -68,18 +79,29 @@ body
 }
 .btn-h
 {
-    background: var(--maincolor);
+    background: var(--p-400-main-color);
     color: var(--seccolor);
 }
 /* //////////// END OF LANDING //////////// */
 /* ///////////// START OF PROD //////////// */
+.card
+{
+    border-radius: var(--border-radius);
+    padding-top: .4rem;
+}
 .btn-p
 {
-    background: var(--seccolor3);
+    background: var(--p-600-main-color);
     color: var(--seccolor);
 }
 .btn-p:hover
 {
     background: var(--darkcolor);
     color: var(--seccolor);
+}
+.products span
+{
+    transition: all 1s;
+    margin: 0.4rem 1rem;
+    color: var(--seccolor3);
 }

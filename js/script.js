@@ -10,7 +10,7 @@ document.getElementById("rels").onclick = function () {
     alert("this section is under delopment")
     console.log("alert is done")
 }
-///////////////////////////////////
+//////////////OF HOME/////////////
 // Start of VARIABLES
 var num1 = 21
 var num2 = 18
@@ -49,3 +49,8 @@ console.log(obj.city)
 var D 
 console.log(typeof D)
 /////////////////////REVISION ON JS///////////////////////
+//////////////OF PROD//////////////
+document.getElementById("btn-r").onclick = function () {
+    document.getElementById("prod-s").innerHTML = "Soon"
+    console.log("prodsection is done")
+}
