@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style2.css">
+  </head>
+  <body>
+    <div class="container">
+    <form action="#" class=" form-control mt-5">
+      <fieldset>
+        welcome to ...
+        <legen>login</legend>
+        <div class="name my-3" >
+          <label for="username" class=" form-label">ENTER YOUR USER NAME</label>
+          <input type="text" class=" form-controll form-control" id="username" placeholder="enter your user name">
+        </div>
+        <hr>
+        <p>OR</p>
+        <hr>
+        <div class="name2">
+          <p id="un" class=" visually-hidden">enter your name</p>
+          <input type="text" class=" form-control" aria-label="un" >
+          <p id="name"></p>
+        </div>
+      </fieldset>
+      <div class="d-flex flex-column justify-content-around gap-3">
+        <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+          <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+          <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+      </div>
+      <div>
+         <label for="email" class=" form-label">enter your email</label>
+         <input type="email" class=" form-control" name="email" id="email" aria-label="emailtyper">
+         <div class=" form-text" id="emailtyper">
+          enter your email by form text
+         </div><!--form-text-->
+      </div>
+      <hr>
+      <!-- DISABLED AND READ ONLY -->
+      <div>
+         <label for="email" class=" form-label">enter your email</label>
+         <input type="email" class=" form-control my-2" name="email" disabled id="email" aria-label="emailtyper" placeholder="this is disabled input">
+         <input type="email" class=" form-control" name="email" readonly id="email" aria-label="emailtyper" placeholder="this is readonly input">
+         <div class=" form-text" id="emailtyper">
+          enter your email by form text
+         </div><!--form-text-->
+      </div>
+      <!--  READONLY PLAIN TEXT  -->
+      <div>
+        <input type="email" readonly class=" form-control-plaintext" name="email2" id="eamail2" placeholder="user@domain.com">
+      </div>
+      <HR></HR>
+      <!-- FILES -->
+      <div class=" d-flex flex-column gap-3">
+        <input type="file" class=" form-control" multiple name="file" id="file">
+        <input type="file" class=" form-control-sm" multiple name="file" id="file">
+      </div>
+      <hr>
+      <!-- COLOR -->
+      <div>
+        <input type="color" name="#" id="##" class=" form-control-color">
+      </div>
+      <!-- RADIO AND CHECKBOXES -->
+      <div class=" text-center">
+        <input type="checkbox" class=" form-check-input" name="yes" id="yes">
+        <label class=" form-check-label" for="yes">I AGREE</label>
+
+       
+        <label class=" form-check-label"><input type="checkbox" class=" form-check-input"> I dont AGREE</label>
+      </div>
+      <!--  SUBMIT   -->
+      <div class=" my-5">
+        <input type="submit" class="btn btn-primary d-block m-auto" id="submit">
+      </div>
+    </form>
+    </div><!--container-->
+    <script src="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../js/script2.js"></script>
+  </body>
+</html>
