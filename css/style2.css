@@ -3,10 +3,68 @@
     font-family: 'Roboto', sans-serif;
 }
 /* TODO -- NAV -- */
+.nav-link{
+    position: relative;
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    margin-left: 7.1px;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    transition: .4s ease-in-out;
+    border: none;
+}
+.navbar .nav-link:hover{
+    color: var(--bs-blue)
+}
+.nav-link:hover::after{
+    width: 80%;
+}
 
+#navbar .dropdown .dropdown-menu .dropdown-item
+{
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: .7rem;
+}
+#navbar .dropdown .dropdown-menu > li:hover a{
+    color: var(--bs-blue);
+}
+#navbar .dropdown .dropdown-menu{
+   padding: 1rem .5rem;
+   gap: .7rem; 
+}
+
+@media (max-width: 992px) {
+#navbar .dropdown .dropdown-menu{
+        height: 0px;
+        padding: 0 .5rem;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10);
+        transition: .3s ease-in-out;
+    }
+/*  ?############# hover list #############*/
+#navbar .nav-item.dropdown:hover .dropdown-menu
+{
+    height: auto;
+    transform: translateY(7px);
+    visibility: visible;
+    opacity: 1;
+}
+.nav-link::after{
+    display: none;
+}
+}
 /* TODO -- HOME -- */ 
 .home {
-    background: linear-gradient(to top,  rgba(0, 0, 0, 0.612) ,rgba(0, 0, 0, 0.612)), url(/images/gradient-background-2560x1080-11027.jpg) center/cover no-repeat;
+    background: linear-gradient(to top,  rgba(0, 0, 0, 0.612) ,rgba(0, 0, 0, 0.612)), url(../images/gradient-background-2560x1080-11027.jpg) center/cover no-repeat;
 }
 .home .text {
     min-height: 165px;
@@ -25,6 +83,7 @@
     transform: translateX(10px);
     width: .4ch;
     background: #fff;
+    animation: fade 4s linear infinite;
 }
 .home .text .title::after{
     content: "";  

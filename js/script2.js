@@ -8,5 +8,5 @@ var z = x * y
 console.log(x)
 document.getElementById("interv").innerHTML = (z)
 // ///////////////
-console.log(x++) // operation result 
+console.log(x++) //print result = 20 // operation result = 21  
 console.log(x)
