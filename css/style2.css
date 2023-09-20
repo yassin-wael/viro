@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&family=Satisfy&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/* TODO -- NAV -- */
+
+/* TODO -- HOME -- */ 
+.home {
+    background: linear-gradient(to top,  rgba(0, 0, 0, 0.612) ,rgba(0, 0, 0, 0.612)), url(/images/gradient-background-2560x1080-11027.jpg) center/cover no-repeat;
+}
+.home .text {
+    min-height: 165px;
+}
+.home .text .title
+{
+    width: fit-content;
+}
+.home .text .title::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 85%;
+    transform: translateX(10px);
+    width: .4ch;
+    background: #fff;
+}
+.home .text .title::after{
+    content: "";  
+    animation: typing 16s linear infinite;
+}
+ @keyframes typing {  0% {content: "";}  0.8928571428571429% {content: "T";}
+  1.7857142857142858% {content: "Th";}
+  2.678571428571429% {content: "Thi";}
+  3.5714285714285716% {content: "This";}
+  4.464285714285714% {content: "This ";}
+  5.357142857142858% {content: "This i";}
+  6.25% {content: "This is";}
+  17.857142857142858% {content: "This is";}
+  18.75% {content: "This i";}
+  19.642857142857142% {content: "This ";}
+  20.535714285714285% {content: "This";}
+  21.428571428571427% {content: "Thi";}
+  22.32142857142857% {content: "Th";}
+  23.214285714285715% {content: "T";}
+  25% {content: "";}
+  25.520833333333332% {content: "A";}
+  26.041666666666668% {content: "A ";}
+  26.5625% {content: "A B";}
+  27.083333333333332% {content: "A Bo";}
+  27.604166666666668% {content: "A Boo";}
+  28.125% {content: "A Boot";}
+  28.645833333333332% {content: "A Boots";}
+  29.166666666666668% {content: "A Bootst";}
+  29.6875% {content: "A Bootstr";}
+  30.208333333333336% {content: "A Bootstra";}
+  30.729166666666668% {content: "A Bootstrap";}
+  31.25% {content: "A Bootstrap ";}
+  43.229166666666664% {content: "A Bootstrap ";}
+  43.75% {content: "A Bootstrap";}
+  44.270833333333336% {content: "A Bootstra";}
+  44.791666666666664% {content: "A Bootstr";}
+  45.3125% {content: "A Bootst";}
+  45.833333333333336% {content: "A Boots";}
+  46.354166666666664% {content: "A Boot";}
+  46.875% {content: "A Boo";}
+  47.395833333333336% {content: "A Bo";}
+  47.916666666666664% {content: "A B";}
+  48.4375% {content: "A ";}
+  48.958333333333336% {content: "A";}
+  50% {content: "";}
+  51.041666666666664% {content: "A";}
+  52.083333333333336% {content: "An";}
+  53.125% {content: "And";}
+  54.166666666666664% {content: "And ";}
+  55.208333333333336% {content: "And J";}
+  56.25% {content: "And JS";}
+  67.70833333333333% {content: "And JS";}
+  68.75% {content: "And J";}
+  69.79166666666667% {content: "And ";}
+  70.83333333333333% {content: "And";}
+  71.875% {content: "An";}
+  72.91666666666667% {content: "A";}
+  75% {content: "";}
+  75.41666666666667% {content: "T";}
+  75.83333333333333% {content: "Te";}
+  76.25% {content: "Tes";}
+  76.66666666666667% {content: "Test";}
+  77.08333333333333% {content: "Testi";}
+  77.5% {content: "Testin";}
+  77.91666666666667% {content: "Testing";}
+  78.33333333333333% {content: "Testing ";}
+  78.75% {content: "Testing W";}
+  79.16666666666667% {content: "Testing We";}
+  79.58333333333333% {content: "Testing Web";}
+  80% {content: "Testing Webs";}
+  80.41666666666667% {content: "Testing Websi";}
+  80.83333333333333% {content: "Testing Websit";}
+  81.25% {content: "Testing Website";}
+  93.33333333333333% {content: "Testing Website";}
+  93.75% {content: "Testing Websit";}
+  94.16666666666667% {content: "Testing Websi";}
+  94.58333333333333% {content: "Testing Webs";}
+  95% {content: "Testing Web";}
+  95.41666666666667% {content: "Testing We";}
+  95.83333333333333% {content: "Testing W";}
+  96.25% {content: "Testing ";}
+  96.66666666666667% {content: "Testing";}
+  97.08333333333333% {content: "Testin";}
+  97.5% {content: "Testi";}
+  97.91666666666667% {content: "Test";}
+  98.33333333333333% {content: "Tes";}
+  98.75% {content: "Te";}
+  99.16666666666667% {content: "T";}
+  100% {content: "";}
+}

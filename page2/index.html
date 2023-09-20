@@ -9,7 +9,9 @@
   </head>
   <body>
     <div class="container">
-    <form action="#" class=" form-control mt-5">
+      <div id="interv" class=" fw-bold text-bg-danger mt-4 p-5 rounded-3 text-center"></div>
+      <div id="interv1" class=" fw-bold text-bg-danger mt-4 rounded-3 text-center"></div>
+      <form action="#" class=" form-control mt-5">
       <fieldset>
         welcome to ...
         <legen>login</legend>
@@ -67,13 +69,23 @@
       <div class=" text-center">
         <input type="checkbox" class=" form-check-input" name="yes" id="yes">
         <label class=" form-check-label" for="yes">I AGREE</label>
-
-       
         <label class=" form-check-label"><input type="checkbox" class=" form-check-input">I dont AGREE</label>
       </div>
+      <!-- SWITCH KEY -->
+      <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+      <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+    </div>
+    <div class="form-check text-center">
+      <input type="radio" class=" btn-check" name="user" id="user">
+      <label for="user" class=" btn btn-outline-danger" name="user">GIRL</label>
+      <input type="radio" name="user" class=" btn-check" id="boy">
+      <label for="boy" class=" btn btn-outline-primary">BOY</label>
+    </div>
       <!--  SUBMIT   -->
       <div class=" my-5">
         <input type="submit" class="btn btn-primary d-block m-auto" id="submit">
+        
       </div>
     </form>
     </div><!--container-->
