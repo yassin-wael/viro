@@ -19,8 +19,8 @@
   <div class="home">
   <!-- ////////////////// NAVBAR ////////////////-->
   <nav class="navbar navbar-expand-lg py-0 col-lg-9 mx-auto fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">EIAV</a>
+    <div class="container bg-black bg-opacity-75">
+      <a class="navbar-brand fs-3 fw-bold text-white" href="#">EIAV</a>
       <button class="navbar-toggler border-0 p-0 fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
@@ -29,7 +29,7 @@
         </span>
       </button>
       <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav align-items-center">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
@@ -37,22 +37,60 @@
             <a class="nav-link" href="#">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
+              Section <i class="fa-solid fa-chevron-down fs-6"></i>
             </a>
             <ul class="dropdown-menu mb-2">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Actions</a></li>
+              <li><a class="dropdown-item" href="#">INFO</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
+            <a class="nav-link" href="#">Contact</a>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-sm px-3 btn-primary h-75 rounded-pill ms-2">Login</button>
         </ul>
       </div>
     </div>
   </nav>
+
+<!-- !############ Modal ############ -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-bottom">
+      <div class="modal-header bg-primary">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- ?############## MODEL BODY ############# -->
+      <div class="modal-body d-flex flex-column gap-3">
+        <div class="col1">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+          </div>
+        </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+           </div>
+        
+        <!-- ? CHECKBOX -->
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+          <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+        </div>
+        <!-- ? CHECKBOX -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- ///////////////// LANDING /////////////// -->
         <div class="landing d-flex justify-content-center align-items-center position-relative">
           <div class="text-center text-light">

@@ -24,6 +24,8 @@
     --mainwidth: 1.5rem;
     --border-radius: .7rem;
     --sec-border-radius: .4rem;
+    --main-transition: .4s ease;
+    --main-border-raduis: 1rem;
 }
 body
 {
@@ -34,26 +36,33 @@ body
 {
     background: url(../images/gradient-background-2560x1080-11027.jpg) no-repeat center fixed;
 }
-.navbar 
+.navbar > .container
 {
     border-radius: 0rem 0rem .7rem .7rem;
-    background: var(--darkcolor) !important;
-    z-index: 1000;
-    /* width: 100%; */
 }
-.navbar a
+.navbar-nav .nav-link
 {
+    position: relative;
     color: var(--p-100-main-color);
-}
-.navbar .btn
-{
-    background-color: var(--p-700-main-color);
-    color: var(--seccolor);
 }
 .navbar a:hover
 {
     color: var(--seccolor);
 }
+a.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0.4rem;
+    height: 2px;
+    width: 0%;
+    background: #fff;
+    transition: var(--main-transition);
+}
+a.nav-link:hover::after {
+    width: 80%;
+}
+/* NAV BS TOGGLERS */
 .navbar span svg
 {
     color: var(--seccolor) !important;
@@ -70,6 +79,20 @@ body
 .navbar .navbar-toggler[aria-expanded="true"]
 {
     border: 1px solid var(--maincolor) !important;
+}
+.dropdown-toggle::after{
+    border: 0;
+}
+.dropdown-menu {
+    border-radius: 1rem;
+}
+@media (min-width: 992px) {
+    .dropdown-menu {
+        transform: translateY(14px);
+    }
+}
+.modal-content , .modal-content .modal-header {
+    border-radius: var(--main-border-raduis) !important;
 }
 /* END OF NAV BAR */
 /* START OF LANDING */
@@ -121,7 +144,7 @@ body
     height: 100vh;
 }
 /* ADDOTIONALS */
-[data-bs-theme="dark"] .navbar a
+/* [data-bs-theme="dark"] .navbar a
 {
     color: var(--p-200-main-color);
-}
+} */
