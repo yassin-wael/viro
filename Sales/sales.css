@@ -107,56 +107,48 @@ a.nav-link:hover::after {
     background: var(--p-500-main-color) !important;
 }
 /* END OF NAV BAR */
-/* START OF LANDING */
-.landing
+/* START OF HOME*/
+.title
 {
-    height: calc(100vh - 0px);
-    background: #0000008e;
+    color: #fff;
 }
-.btn-h
+.card-img
 {
-    background: var(--p-400-main-color);
-    color: var(--seccolor);
+    height: 240px !important;
+    width: 100%;
+    background: url(https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/folder_920_201707260845-1.png) center/cover no-repeat;
 }
-/* //////////// END OF LANDING //////////// */
-/* ///////////// START OF PROD //////////// */
-.products
+.card-parent .cr-2
 {
-    height: 100vh;
-    display: flex;
-
-    align-items: center;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxlMZLh_0ESGXRsXV4S0pWLHgVE5QrqxSr_dxF5r-CQB4gh9eSgIDevxs&s=10) center/cover no-repeat;
+    background-size: 145%;
+    
 }
-.card
+.card-parent .cr-3
 {
-    border-radius: var(--border-radius);
-    padding-top: .4rem;
+    background: url(https://play-lh.googleusercontent.com/SgbeD-i8jG_TJ-RqyFeKoDXsdejlmnHqhM4TJfuvdpCpiDPL8snvIfEmq3xamJ4xJA=w600-h300-pc0xffffff-pd) center/cover no-repeat;
+    background-size: 260% !important;
+    
 }
-.btn-p
+.card-parent .cr-4
 {
-    background: var(--p-600-main-color);
-    color: var(--seccolor);
+    background: url(https://seeklogo.com/images/Y/youtube-red-original-series-logo-051DF29E48-seeklogo.com.png) center/cover no-repeat;
+    /* background-size: 100%; */
+    
 }
-.btn-p:hover
+.card-parent .cr-5
 {
-    background: var(--darkcolor);
-    color: var(--seccolor);
+    background: url(https://pbs.twimg.com/profile_images/1661161645857710081/6WtDIesg_400x400.png) center/cover no-repeat;
 }
-.products #prod-s
+.card-parent .cr-6
 {
-    transition: all 1s;
-    top: .5rem;
-    margin: 0.4rem 1rem;
-    color: var(--bs-primary);
-    font-weight: 500;
+    background: url(https://logowik.com/content/uploads/images/905_apple_music.jpg) center/contain no-repeat;
 }
-/* ?############ SERVICES ############*/
-.services
+.card-parent .cr-7
 {
-    height: 100vh;
+    background: url(https://i.insider.com/5e431d0c3b62b732ad6c3c6c) center/cover no-repeat; 
 }
-/* ADDOTIONALS */
-/* [data-bs-theme="dark"] .navbar a
+#total
 {
-    color: var(--p-200-main-color);
-} */
+    border: 1px solid;
+}
