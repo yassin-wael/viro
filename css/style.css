@@ -32,6 +32,11 @@ body
     font-family: "Roboto", sans-serif;
     background: var(--darkcolor);
 }
+.overlay{
+    background: #000000a5;
+    width: 100%;
+    height: 100%;
+}
 .home
 {
     background: url(../images/gradient-background-2560x1080-11027.jpg) no-repeat center fixed;
@@ -155,6 +160,39 @@ a.nav-link:hover::after {
 {
     height: 100vh;
 }
+/* ! CAROUSEL SECTION */
+.ccntr{
+    display: grid;
+    place-items: center;
+}
+.carousel-caption{
+    /* background: rgba(255, 255, 255, 0.325); */
+    z-index: 10;
+    border-radius: var(--sec-border-radius);
+}
+.spot-eff {
+    top: 10px;
+    min-height: 250px;
+}
+.spot-eff::before {
+    content: "";
+    position: absolute;
+    top: -250px;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(to top, rgb(0, 0, 0)1% , rgba(58, 58, 58, 0) 90%);
+}
+.spot-eff::after {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(to bottom, rgb(0, 0, 0)1% , rgba(58, 58, 58, 0) 90%);
+}
+
 /* ADDOTIONALS */
 /* [data-bs-theme="dark"] .navbar a
 {
