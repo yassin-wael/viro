@@ -1,5 +1,5 @@
 document.getElementById("btn-h").onclick = function () {
-    document.getElementById("div1").innerHTML = "Scroll down to be directed the form page"
+    document.getElementById("div1").innerHTML = "Scroll down For more details"
     console.log("first commit is done")
 }
 document.getElementById("home-form").onclick = function () {

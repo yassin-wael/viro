@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Indie+Flower&family=Libre+Barcode+39+Extended+Text&family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&family=Satisfy&display=swap');
 *
 {
     margin: 0;
@@ -124,6 +125,12 @@ a.nav-link:hover::after {
     background: var(--p-400-main-color);
     color: var(--seccolor);
 }
+.landing h1{
+    font-weight: 800;
+}
+.landing p , #div1{
+    font-family: 'Caveat', cursive;
+}
 /* //////////// END OF LANDING //////////// */
 /* ///////////// START OF PROD //////////// */
 .products
@@ -195,7 +202,20 @@ a.nav-link:hover::after {
     height: 250px;
     background: linear-gradient(to bottom, rgb(0, 0, 0)1% , rgba(58, 58, 58, 0) 90%);
 }
-
+/* ! ACCORDION SECTION */
+/* .gm-title{
+    position: relative !important; 
+} */
+.gm-title::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--p-200-main-color);
+    width: 100px;
+    height: 3px;
+}
 /* ADDOTIONALS */
 /* [data-bs-theme="dark"] .navbar a
 {
