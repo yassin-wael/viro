@@ -216,6 +216,48 @@ a.nav-link:hover::after {
     width: 100px;
     height: 3px;
 }
+/* ! PRODUCTS */
+.cardhover , .c-img{
+    transition: 0.5s; 
+}
+.cardhover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    background: #1403307e;
+    transition: .5s;
+    border-radius: inherit;
+    z-index: 88;
+}
+.cardhover:hover .c-img{
+    scale: 1.2;
+}
+.cardhover::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 0%;
+    background: #1403307e;
+    border-radius: inherit;
+    transition: all .5s ease-in-out;
+    z-index: 88;
+}
+.cardhover:hover::before{
+    width: 100%;
+    height: 100%;
+}
+.cardhover:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.btn-prod{
+    z-index: 100;
+}
 /* ADDOTIONALS */
 /* [data-bs-theme="dark"] .navbar a
 {
