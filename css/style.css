@@ -263,8 +263,26 @@ a.nav-link:hover::after {
     z-index: 100;
 }
 /* ! services */
-.services2 .card{
-    background: none;
+.services .card{
+    transition: .3s ease-in-out;
+    backdrop-filter: grayscale(10);
+}
+.services .card:hover{
+    transform: scale(0.9);
+    backdrop-filter: grayscale(0);
+}
+.services .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, black 14%, transparent);
+    z-index: 99;
+}
+.card-img-overlay{
+    z-index: 100;
 }
 /* .s-item{
     height: 4rem;
